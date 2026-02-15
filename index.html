@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="heart.gif">
+</head>
+<body>
+    <div class="wtext">
+        <h1 class="wtitle">Hola mi amorcito!</h1>
+        <img 
+        class="flowers"
+            src="https://media.tenor.com/H08IhtyQWhEAAAAi/lascara-cascara.gif"
+        />
+    </div>
+    <div class="maindiv">
+        <div class="poem">
+            <p>He hecho esta pagina con mucho amor para ti por San Valentin, se que tarde en dartelo pero tuve que 
+                investigar muchas cosas ya que no he programado de hace mas de 2 años, pero es no es lo importante, 
+                lo que importa es que este dia que paso es muy especial para mi, es una fecha en la que puedo expresar 
+                mi amor por ti mucho mas que el resto de dia, solo el primero de eternos San Valentines. Eres la luz 
+                de mis ojos y la razon de mi felicidad, te prometo que jamas me separarte de ti y siempre me esforzare 
+                en todo para hacerte feliz, ya que si tu mi niña linda eres feliz, yo lo soy.
+            </p>
+            <p>Aun recuerdo el dia que te pedi que fueras mi novia, me sentia tan profundamente nervioso de lo que me 
+                dijeras, te tenia muchisimo cariño en ese momento y no paraba de pensar en lo que me habias dicho
+                de que las amistades se arruinaban cuando se sentia amor... Felizmente si se arruino la amistad 💖 para
+                pasar a ser algo muchisimo mejor que eso, cabe resaltar que ya no solo te tengo cariño amor, sino que siento
+                un inmenso amor por ti, aun sigo enamorado de ti y lo estare eternamente, porque cada cosa que te define simplemente
+                me vuelve loco, con tus ojazos tan hermosos que iluminan mi ser, tu risa tan melosa que derrite mi corazon 
+                y tu cariño que me hace sentir tan amado, sere siempre tuyo y exclusivamente tuyo, de nadie mas.
+            </p>
+            <p>No me creeras lo nervioso que estoy hoy por la cita, espero que te vaya a gustar mi amor y que esta pagina tambien te guste 😘</p>
+        </div>
+        <div class="apics">
+            <img 
+            class="i1"
+                src="11.png" alt="i1"/>
+            <img 
+            class="i2"
+                src="22.png" alt="i2"/>
+            <img 
+            class="i3"
+                src="33.png" alt="i3"/>
+        </div>
+    </div>
+    <div class="maindiv2">
+        <div class="title2">
+            <h1>
+                Me hiciste el hombre mas feliz del mundo aquel 26 de octubre del 2025...
+            </h1>
+        </div>
+        <div class="time">
+            <p id="contador"></p>
+            <p>Y eso es una inifnitamente pequeña fraccion del tiempo que me haras feliz!</p>
+        </div>
+    </div>
+    <div class="maindiv3">
+        <div class="title2">
+            <h1>
+                He recolectado los poemas que te he escrito
+            </h1>
+            <p>(Y solo son algunos de los muchos que te escribire)</p>
+        </div>
+        <div class="poems">
+            <div class="pp1">
+                <div class="p1">
+                    <a href="ojos.html">
+                        <img 
+                        class="ojos"
+                            src="ojos.jpeg"
+                        />
+                        <h1>Tus ojos</h1>
+                    </a>
+                </div>
+                <div class="p1">
+                    <a href="falta.html">
+                        <img 
+                        class="falta" 
+                            src="falta.jpeg"
+                        />
+                        <h1>El tiempo que nos falta</h1>  
+                    </a>              
+                </div>
+                <div class="p1">
+                    <a href="eternidad.html">
+                        <img 
+                        class="eternidad" 
+                            src="eternidad.jpg"
+                        />
+                        <h1>Eternidad</h1>  
+                    </a>             
+                </div>
+            </div>
+            <div class="pp2">
+                <div class="p2">
+                    <a href="amandote.html">
+                        <img 
+                        class="amandote" 
+                            src="amandote.jpeg"
+                        />
+                        <h1>Amandote</h1>  
+                    </a>              
+                </div>
+                <div class="p2">
+                    <a href="ahogado.html">
+                        <img 
+                        class="ahogado" 
+                            src="ahogado.jpg"
+                        />
+                        <h1>En el agua</h1>  
+                    </a>             
+                </div>
+                <div class="p2">
+                    <a href="conrazon.html">
+                        <img 
+                        class="conrazon" 
+                            src="conrazon.png"
+                        />
+                        <h1>Co(n)razon</h1>                 
+                    </a>             
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+const fechaInicio = new Date(2025, 9, 26);
+
+function actualizarContador() {
+  const ahora = new Date();
+
+  let años = ahora.getFullYear() - fechaInicio.getFullYear();
+  let meses = ahora.getMonth() - fechaInicio.getMonth();
+  let dias = ahora.getDate() - fechaInicio.getDate();
+
+  // Ajustes cuando los valores son negativos
+  if (dias < 0) {
+    meses--;
+    const ultimoMes = new Date(ahora.getFullYear(), ahora.getMonth(), 0);
+    dias += ultimoMes.getDate();
+  }
+
+  if (meses < 0) {
+    años--;
+    meses += 12;
+  }
+
+  // Tiempo exacto (horas, minutos, segundos)
+  const diferencia = ahora - fechaInicio;
+  const segundosTotales = Math.floor(diferencia / 1000);
+  const minutosTotales = Math.floor(segundosTotales / 60);
+  const horasTotales = Math.floor(minutosTotales / 60);
+
+  const horas = horasTotales % 24;
+  const minutos = minutosTotales % 60;
+  const segundos = segundosTotales % 60;
+
+  document.getElementById("contador").innerHTML =
+    "Y me has seguido haciendo feliz por " + años + " años, " +
+    meses + " meses, " +
+    dias + " días, " +
+    horas + " horas, " +
+    minutos + " minutos y " +
+    segundos + " segundos.";
+}
+
+actualizarContador();
+setInterval(actualizarContador, 1000);
+
+</script>

@@ -1,0 +1,219 @@
+body {
+    background-color: rgb(49, 32, 32);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.wtext {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10rem;
+    color: rgb(49, 32, 32);
+    background-color: bisque;
+    margin: -10px;
+    padding-left: 50px;
+    height: 120%;
+    align-items: center;
+    box-shadow: 0px 20px 15px bisque;
+}
+
+.wtitle {
+    animation-name: fadeIn;
+    animation-duration: 6s;
+}
+
+.maindiv {
+display: flex;
+padding: 40px;
+color: white;
+flex-direction: row;
+justify-content: center;
+
+}
+
+.poem {
+    width: 70%;
+    font-size: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.apics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.maindiv2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 45px;
+}
+
+.time {
+    font-size: 2.5rem;
+    padding: 45px;
+}
+
+.poems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px 60px;
+    width: 100%;
+
+}
+
+.itemt {
+    width: 10rem;
+    height: 10rem;
+}
+
+.flowers {
+    width: 40rem;
+    height: 40rem;
+
+}
+
+.conrazon {
+    height: 18rem;
+    width: 13rem;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+}
+
+.ahogado {
+    height: 18rem;
+    width: 13rem; 
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+}
+
+.eternidad {
+    height: 20rem;
+    width: 11rem;  
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;  
+}
+
+.falta {
+    height: 18rem;
+    width: 13rem;  
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black; 
+}
+
+.ojos {
+    height: 18rem;
+    width: 13rem;  
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+}
+
+.amandote {
+    height: 19rem;
+    width: 12rem;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+}
+
+.p1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(65, 44, 44);
+    border-radius: 20px;
+    width: 30rem;
+    height: 30rem;
+    padding: 15px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.p2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(65, 44, 44);
+    border-radius: 20px;
+    width: 30rem;
+    height: 30rem;
+    padding: 15px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.pp1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.pp2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.p1:hover {
+    width: 31rem;
+    height: 31rem;
+}
+
+.p2:hover {
+    width: 31rem;
+    height: 31rem;
+}
+
+.i1 {
+    width: 25rem;
+    height: 25rem;
+    transform: rotate(22deg);
+}
+
+.i2 {
+    width: 25rem;
+    height: 30rem;
+    transform: rotate(36deg);
+}
+
+.i3 {
+    width: 25rem;
+    height: 25rem;
+    transform: rotate(-23deg);
+}
